@@ -6,16 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
+
 
         <LinearLayout
             android:id="@+id/layoutMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/textLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
 
             <TextView
                 android:id="@+id/my_name"
@@ -40,7 +49,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="change"
+                android:onClick="changeName"
                 android:layout_gravity="end"
+                />
+            <Button
+                android:id="@+id/btnClearAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:layout_gravity="start"
                 />
 
             <ImageView
@@ -69,7 +86,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="@string/first"
                 android:textAlignment="viewStart"
                 android:textSize="20sp"/>
             <TextView
@@ -79,7 +95,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="@string/second"
                 android:textAlignment="viewStart"
                 android:textSize="20sp"/>
 
